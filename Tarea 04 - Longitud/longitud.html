@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de medidas de Longitud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor de Medidas en forma líquida</h1>
+        <input type="number" id="inputLiq" placeholder="Ingrese la medida">
+        <select id="inputUnit">
+            <option value="M">Metros</option>
+            <option value="C">Centímetros</option>
+            <option value="ML">Milímetros</option>
+        </select>
+        <button onclick="convertLongitud()">Convertir</button>
+        
+        <div class="length">
+            <div class="rule">
+                <h2>Metros</h2>
+                <div class="medida" id="metrosMedida"></div>
+                <p id="metrosValue">0 M</p>
+            </div>
+            <div class="rule">
+                <h2>Centímetros</h2>
+                <div class="medida" id="mentímetrosMedida"></div>
+                <p id="mentímetrosValue">0 cm</p>
+            </div>
+            <div class="rule">
+                <h2>Milímetros</h2>
+                <div class="medida" id="milímetrosMedida"></div>
+                <p id="milímetrosValue"> 0 ml </p>
+            </div>
+        </div>
+    </div>
+    
+
+<script src="MedidorLongitud.js"></script>
+</body>
+</html>

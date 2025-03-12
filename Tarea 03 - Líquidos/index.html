@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Medidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor de Medidas de Líquido</h1>
+        <input type="number" id="inputMed" placeholder="Ingrese la medida">
+        <select id="inputUnit">
+            <option value="G">Galones</option>
+            <option value="L">Litros</option>
+            <option value="B">Botellas</option>
+        </select>
+        <button onclick="convertMed()">Convertir</button>
+        
+        <div class="bottles">
+            <div class="bottle">
+                <h2>Galones</h2>
+                <div class="liquid" id="galonesLiquid"></div>
+                <p id="galonesValue">0 Galones</p>
+            </div>
+            <div class="bottle">
+                <h2>Litros</h2>
+                <div class="liquid" id="litrosLiquid"></div>
+                <p id="litrosValue">0 Litros</p>
+            </div>
+            <div class="bottle">
+                <h2>Botellas</h2>
+                <div class="liquid" id="botellasLiquid"></div>
+                <p id="botellasValue">0 Botellas</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="convertidorLiquidos.js"></script>
+</body>
+</html>

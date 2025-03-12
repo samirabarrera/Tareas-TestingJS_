@@ -1,0 +1,57 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #5a4196;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ada3e2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button {
+    background-color: #5a4196;
+    color: white;
+}
+
+button:hover {
+    background-color: #e1def6;
+    color: #2e2253;
+    text-transform: capitalize;
+}
+
+.bottles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.bottle {
+    width: 100px;
+    text-align: center;
+}
+
+.liquid {
+    width: 100%;
+    background-color: #00a8ff;
+    transition: height 0.5s ease;
+    border-radius: 0 0 10px 10px;
+}
+
+h2 {
+    margin: 10px 0;
+}
