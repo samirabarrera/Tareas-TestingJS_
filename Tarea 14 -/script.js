@@ -70,46 +70,48 @@ durante cada iteración.*/
 /*Tarea 7:
 Para comprobar tu trabajo, registra las posiciones del número de iteradores 
 dentro del forbucle interno y ejecuta tu código. 
-Deberías ver 0 hasta 4 repetidamente porque vowels tiene 5 elementos.
+Deberías ver 0 hasta 4 repetidamente porque vowels tiene 5 elementos.*/
 
-Tarea 8:
+/*Tarea 8:
 Dentro del segundo for loop, escribe un bloque de código que compare
 las letras ingresadas en input y la matriz vowels.
 Para revisar que todo funcione correctamente, muestra en pantalla
-las coincidencias de letras.
+las coincidencias de letras.*/
 
-Tarea 9:
+/*Tarea 9:
 Ahora, en lugar de simplemente mostrar las letras, agréguelas a 
 la matriz de resultados.
 Para comprobar su trabajo, utiliza console.log() para mostrar resultArray.
 Las letras que registró en la consola en el paso 8 deberián estar
-incluidas en su archivo resultArray.
+incluidas en su archivo resultArray.*/
 
-Tarea 10:
+
+console.log(resultArrayy)
+
+/*Tarea 10:
 En el mar se duplican las e y las u.
 Escribe una declarción if que verifique si cada letra de la cadena 
 input es igual a 'e'.  Si es así, utiliza el método push() para agregar
 input[i] a resultArray.
 Esta declaración debe estar antes del bucle for interno, dentro del
 bucle for externo.  Esto se debe a que solo desea realizar esta
-verificación una vez por cada letra del input.
+verificación una vez por cada letra del input.*/
 
-Tarea 11:
-A continuación duplica la u.
+/*Tarea 11:
+A continuación duplica la u.*/
 
-Tarea 12:
-En la parte inferior del programa, registre el resultArray en la consola.
+/*Tarea 12:
+En la parte inferior del programa, registre el resultArray en la consola.*/
 
-Tarea 13:
-Coloca en mayúsculas la matriz resultArray y  juntalos como una cadena.
+/*Tarea 13:
+Coloca en mayúsculas la matriz resultArray y juntalos como una cadena.
 Declara una variable resultString que une nuestro trabajo en resultArray
-en una sola cadena y pone en mayúsculas todas las letras.
+en una sola cadena y pone en mayúsculas todas las letras.*/
 
-Tarea 14:
+/*Tarea 14:
 Ingresa la frase "Ya Doli con el padre han encontrado a su querido hijo",
-la traducción debería ser: AOIOEEAAEEOAOAUUUUEEIOIO
+la traducción debería ser: AOIOEEAAEEOAOAUUUUEEIOIO*/
 
-Tarea 15:
+/*Tarea 15:
 Si has obtenido la respuesta, copia tu código en una IA y pregunta
 por mejoras, mejorar la legibilidad, hacerlo más eficiente...*/
-
