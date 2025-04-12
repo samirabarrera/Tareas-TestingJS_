@@ -1,5 +1,4 @@
 /*Paso 1:
-
 Utilice la asignación desestructurada para crear una
 variable const llamada functionality, que extraiga la
 propiedad functionality de robot.*/

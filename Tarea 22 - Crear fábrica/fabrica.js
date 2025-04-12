@@ -14,17 +14,16 @@ parámetro mobile.
 Luego, agregue un método nombrado beep sin un parámetro 
 que registrará 'Beep Boop'en la consola.*/
 
-function robotFactory (model, mobile) {
+function robotFactory(model, mobile) {
     return {
-        _claveModel: model,
-        _claveModel: mobile
-    } 
-    const robot = {
-        beep () {
-            console.log("Beep Boop")
-        }
-    }
-}
+      _claveModel: model,
+      _claveMobile: mobile,
+  
+      beep() {
+        console.log("Beep Boop");
+      }
+    };
+  }  
 
 /*Paso 2:
 Usa tu función de fábrica declarando una variable const 
@@ -34,16 +33,7 @@ con  el primer argumento de 'P-500'y el segundo argumento
 de true.*/
 
 function robotFactory (model, mobile) {
-    return {
-        _claveModel: model,
-        _claveModel: mobile
-    } 
-    const robot = {
-        beep () {
-            console.log("Beep Boop")
-        }
-    }
-    const tinCan = robotFactory ('P-500', true)
+    const tinCan = ('P-500', "true")
 }
 
 /*Paso 3:
