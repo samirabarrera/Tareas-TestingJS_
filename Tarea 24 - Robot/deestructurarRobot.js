@@ -16,8 +16,7 @@ const robot = {
     }
   };
 
-const functionality = {functionality} = robot
-console.log(functionality);
+const functionality = robot.functionality
 
 /*Paso 2 
 Dado que functionality se hace referencia 
@@ -28,5 +27,4 @@ functionality.
 Aproveche este atajo y llame al método .beep()  en 
 functionality. */
 
-functionality.beep()
-
+functionality.beep(); 
