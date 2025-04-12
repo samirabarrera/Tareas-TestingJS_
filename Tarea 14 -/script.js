@@ -35,7 +35,6 @@ la cadena input.*/
 
 let resultArrayy = matrizVacia = []
 
-
 /*Tarea 4:
 Crea un bucle para recorrer cada letra de la variable input. 
 En un paso posterior, compararemos cada letra con nuestra matriz vowels.*/
@@ -51,7 +50,6 @@ dentro del bucle for y ejecuta tu código. Esto debería contar la cantidad
 de caracteres en tu cadena input.
 Comenta el código cuando hayas comprobado su buen funcionamiento.*/
 
-
 for (let letra of input) {
     console.log(letra);
 }
@@ -63,7 +61,6 @@ el bucle externo.
 
 Esto le permitirá comprobar cada letra input con todos los elementos vowels 
 durante cada iteración.*/
-
 
 
 
