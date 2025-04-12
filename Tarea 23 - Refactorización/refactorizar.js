@@ -1,5 +1,4 @@
-/*     
-Utilice la abreviatura del valor de la propiedad y 
+/* Utilice la abreviatura del valor de la propiedad y 
 refactorice la función de fábrica en el siguiente
 código: */
 
@@ -17,3 +16,14 @@ const robotFactory = (model, mobile) => {
   const newRobot = robotFactory('P-501', false)
   console.log(newRobot.model)
   console.log(newRobot.mobile)
+
+//Estructura Refactorizada
+function robotFactory (model, mobile) {
+  return {
+    model,
+    mobile,
+    beep() {
+      console.log('Beep Boop');
+    }
+  }
+}

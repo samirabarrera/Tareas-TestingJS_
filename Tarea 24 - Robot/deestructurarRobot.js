@@ -16,6 +16,9 @@ const robot = {
     }
   };
 
+const functionality = {functionality} = robot
+console.log(functionality);
+
 /*Paso 2 
 Dado que functionality se hace referencia 
 robot.functionalitypodemos llamar a los métodos 
@@ -24,4 +27,6 @@ functionality.
 
 Aproveche este atajo y llame al método .beep()  en 
 functionality. */
+
+functionality.beep()
 

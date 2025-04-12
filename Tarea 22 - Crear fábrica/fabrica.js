@@ -32,13 +32,11 @@ Asi­gnale a tinCan el valor de la llamada robotFactory
 con  el primer argumento de 'P-500'y el segundo argumento 
 de true.*/
 
-function robotFactory (model, mobile) {
-    const tinCan = ('P-500', "true")
-}
+const tinCan = robotFactory( 'P-500', true);
 
 /*Paso 3:
 Vamos a revisar lo que tinCan puede hacer.
 Realiza una llamada a .beep de tinCan.
 ¿Qué ves en la consola? */
 
-console.log(tinCan.beep)
+tinCan.beep()
