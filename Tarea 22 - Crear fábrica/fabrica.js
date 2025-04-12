@@ -1,7 +1,7 @@
 /*Paso 1:
 En lugar de fabricar robots individuales como lo hemos 
 estado haciendo, creemos una fábrica que funcione para 
-fabricar robots como queramos!
+fabricar robots como querramos!
 
 Cree una función de fábrica llamada robotFactory con 
 dos parámetros model y mobile. 
@@ -12,17 +12,43 @@ Agregue otra propiedad con una clave mobile con el valor del
 parámetro mobile.
 
 Luego, agregue un método nombrado beep sin un parámetro 
-que registrará 'Beep Boop'en la consola. 
+que registrará 'Beep Boop'en la consola.*/
 
-*Paso 2:
+function robotFactory (model, mobile) {
+    return {
+        _claveModel: model,
+        _claveModel: mobile
+    } 
+    const robot = {
+        beep () {
+            console.log("Beep Boop")
+        }
+    }
+}
+
+/*Paso 2:
 Usa tu función de fábrica declarando una variable const 
 llamada tinCan. 
-AsÃ­gnala a tinCan el valor de la llamada robotFactory
+Asi­gnale a tinCan el valor de la llamada robotFactory
 con  el primer argumento de 'P-500'y el segundo argumento 
-de true.
+de true.*/
 
-*Paso 3:
+function robotFactory (model, mobile) {
+    return {
+        _claveModel: model,
+        _claveModel: mobile
+    } 
+    const robot = {
+        beep () {
+            console.log("Beep Boop")
+        }
+    }
+    const tinCan = robotFactory ('P-500', true)
+}
+
+/*Paso 3:
 Vamos a revisar lo que tinCan puede hacer.
 Realiza una llamada a .beep de tinCan.
-¿Qué ves en la consola?
-*/
+¿Qué ves en la consola? */
+
+console.log(tinCan.beep)
