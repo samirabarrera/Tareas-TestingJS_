@@ -28,9 +28,9 @@ objeto team.  Agregue una propiedad _player y una propiedad
 _games e inicialice ambas con matrices vací­as.*/
 
 const team1 = {
-    _player,
-    _games
-}
+    _player: this.player,
+    _games: this.games
+}  
 
 /*Tarea 3
 A continuación, rellene la matriz _players vací­a con
@@ -239,7 +239,7 @@ const team5 = {
     }
 }
 
-console.log()
+console.log(`Nuestro equipo jugó contra ${game.opponent}, donde obtuvimos ${game.teamPoints} puntos y el oponente ${game.opponentPoints}.`);
 
 /*Registre la propiedad _games de teampara verificar que 
 nuestro nuevo registro de juego se agregó correctamente.*/
