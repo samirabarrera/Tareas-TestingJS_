@@ -26,10 +26,10 @@ En el ejemplo anterior
    del array.  Esto guardará cada valor del array numbers multiplicado
    por 10 en la matriz bigNumbers.
 
-   Observemos a numbers y bigNumbers:
-   */
-   console.log(numbers); // Output: [1, 2, 3, 4, 5]
-   console.log(bigNumbers); // Output: [10, 20, 30, 40, 50]
+   Observemos a numbers y bigNumbers: */
+
+  console.log(numbers); // Output: [1, 2, 3, 4, 5]
+  console.log(bigNumbers); // Output: [10, 20, 30, 40, 50]
 
 /*EJERCICIO: 
    
@@ -39,15 +39,15 @@ console.log(secretMessage.join(''));
 */
 const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
 
+const secretMessage = animals.map(animals => animals[0]);
+
   // Create the secretMessage array below
-  
 console.log(secretMessage.join(''));
     
 const bigNumbers2 = [100, 200, 300, 400, 500];
     
   // Create the smallNumbers array below
-
-const smallNumbers = []
+//const smallNumbers = []
 
 /*
 Paso 2:
@@ -55,4 +55,6 @@ Utiliza .map() para dividir todos los números bigNumbers
 entre  100.  Guarda los valores devueltos en una variable
 declarada con const llamada smallNumbers*/
 
-console.log()
+const smallNumbers = bigNumbers2.map(numero => numero / 100);
+
+console.log(smallNumbers); 
