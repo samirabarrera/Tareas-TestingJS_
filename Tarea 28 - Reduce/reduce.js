@@ -31,7 +31,7 @@ Ahora repasemos el uso de .reduce() del ejemplo anterior:
 * La función de devolución de llamada tiene dos parámetros,
   accumulator y currentValue.  El valor de accumulator
   comienza como el valor del primer elemento del array, y
-  el de currenteValue comienza como el del segundo 
+  el de currentValue comienza como el del segundo 
   elemento.  Para ver el valor del cambio de 
   accumulator y currentValue.
 * A medida que .reduce() se itera a través de la matriz, el

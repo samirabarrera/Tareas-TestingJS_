@@ -40,12 +40,14 @@ console.log(secretMessage.join(''));
 const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
 
   // Create the secretMessage array below
-    
+  
 console.log(secretMessage.join(''));
     
 const bigNumbers2 = [100, 200, 300, 400, 500];
     
   // Create the smallNumbers array below
+
+const smallNumbers = []
 
 /*
 Paso 2:
@@ -53,4 +55,4 @@ Utiliza .map() para dividir todos los números bigNumbers
 entre  100.  Guarda los valores devueltos en una variable
 declarada con const llamada smallNumbers*/
 
-const smallNumbers = []
+console.log()
