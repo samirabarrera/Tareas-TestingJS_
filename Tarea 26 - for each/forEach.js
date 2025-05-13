@@ -58,3 +58,5 @@ function printGrocery(element){
     de cada fruta en la consola.  Por ejemplo, 'I want to eat a banana'.
   */
     const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+    fruits.forEach(fruitItem => console.log('I want to eat a ' + fruitItem))
