@@ -69,7 +69,7 @@ Cuarta        107            10            117*/
 
 /*Ejercicio:
 Tarea 1:
-Pratiquemos la llamada .reduce() y el uso de console.log()
+Practiquemos la llamada .reduce() y el uso de console.log()
 para verificar los valores a medida que .reduce()
 itera a través de la matriz.
 
@@ -102,13 +102,13 @@ al cuerpo de la función de devolución de llamada:
 *Una declaración de retorno que devuelve la suma de accumulator y
  currentValue.
 
- Tarea 4:
- Registre el valor de newSum en la consola para ver el
- valor de retorno de llamar .reduce() a newNumbers.
+Tarea 4:
+Registre el valor de newSum en la consola para ver el
+valor de retorno de llamar .reduce() a newNumbers.
 
- Tarea 5:
- Ya que tenemos este código configurado, veamos qué
- sucede si se agrega un segundo argumento a .reduce().
- Este segundo argumento actúa como valor inicial
- para accumulator.
- Añade un segundo argumento de 10 a .reduce(). */
+Tarea 5:
+Ya que tenemos este código configurado, veamos qué
+sucede si se agrega un segundo argumento a .reduce().
+Este segundo argumento actúa como valor inicial
+para accumulator.
+Añade un segundo argumento de 10 a .reduce(). */
