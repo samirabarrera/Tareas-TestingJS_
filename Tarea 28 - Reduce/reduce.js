@@ -49,9 +49,9 @@ inicial de accumulator y el segundo elemento se convierte en
 el valor inicial de currentValue.
 
 Por ejemplo:    */
-numbers = [1, 2, 4, 10];
+const numbers1 = [1, 2, 4, 10];
 
-summedNums = numbers.reduce((accumulator, currentValue) => {
+const summedNums1 = numbers1.reduce((accumulator, currentValue) => {
   return accumulator + currentValue
 }, 100)  // <- Second argument for .reduce()
 
@@ -76,7 +76,7 @@ itera a través de la matriz.
 Para comenzar, declara una nueva variable llamada newSum
 con la palabra clave const. Asignale a newSum el valor
 de la llamada .reduce() a newNumbers. No necesitas
-proporcionar agumentos a  .reduce() todaví­a.
+proporcionar agumentos a  .reduce() todaví­a. 
 
 También verás un TypeError:  undefined is not a function
 pero lo solucionaremos después de agregar nuestra
@@ -88,11 +88,16 @@ const newNumbers = [1, 3, 5, 7];
 Proporciona a .reduce() un argumento de una 
 función de devolución de llamada.  La función de 
 devolución de llamada tiene dos parámetros.  El 
-primero es accumulator y el segundo es currentCalue.
+primero es accumulator y el segundo es currentValue.
 Utiliza una expesión de función o una función de
-flecha. 
+flecha.
 
-Tarea 3:
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue
+})
+
+
+/*Tarea 3:
 Para comprobar el valor que se utiliza a medida que iteramos
 a través de la matriz, agrega tres declaraciones
 al cuerpo de la función de devolución de llamada:
@@ -100,11 +105,33 @@ al cuerpo de la función de devolución de llamada:
 *console.log('The value of accumulator: ', accumulator);
 *console.log('The value of currentValue: ', currentValue);
 *Una declaración de retorno que devuelve la suma de accumulator y
- currentValue.
+ currentValue.*/
 
-Tarea 4:
+/*const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log('The value of accumulator: ' + accumulator);
+  console.log('The value of currentValue: ' + currentValue);
+  console.log('La suma de estos dos es: ', accumulator + currentValue);
+  return accumulator + currentValue;
+});
+console.log('El resultado final es: ', newSum);*/
+
+/*Tarea 4:
 Registre el valor de newSum en la consola para ver el
 valor de retorno de llamar .reduce() a newNumbers.
+
+The value of accumulator: 0
+The value of currentValue: 1
+La suma de estos dos es:  1
+The value of accumulator: 1
+The value of currentValue: 3
+La suma de estos dos es:  4
+The value of accumulator: 4
+The value of currentValue: 5
+La suma de estos dos es:  9
+The value of accumulator: 9
+The value of currentValue: 7
+La suma de estos dos es:  16
+El resultado final es:  16
 
 Tarea 5:
 Ya que tenemos este código configurado, veamos qué
@@ -112,3 +139,13 @@ sucede si se agrega un segundo argumento a .reduce().
 Este segundo argumento actúa como valor inicial
 para accumulator.
 Añade un segundo argumento de 10 a .reduce(). */
+
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log('The value of accumulator: ' + accumulator);
+  console.log('The value of currentValue: ' + currentValue);
+  console.log('La suma de estos dos es: ', accumulator + currentValue);
+  
+  return accumulator + currentValue;
+}, 10);
+
+console.log('El resultado final es: ', newSum);
