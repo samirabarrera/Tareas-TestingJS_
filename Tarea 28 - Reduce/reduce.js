@@ -147,5 +147,4 @@ const newSum = newNumbers.reduce((accumulator, currentValue) => {
   
   return accumulator + currentValue;
 }, 10);
-
 console.log('El resultado final es: ', newSum);
