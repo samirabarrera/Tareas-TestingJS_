@@ -15,24 +15,38 @@ Reemplace la palabra method en la primera llamada al
 método con un método que hará algo con cada uno de los
 valores en la matriz y devolverá undefined.
 
+cities.forEach(city => console.log('Have you visited ' + city + '?'));
+
 PASO 2:
 En la segunda llamada al método, reemplace la palabra
 method con un método que devolverá una matriz solo con
 aquellos elementos más largos que 7 caracteres.
+
+const longCities = cities.map(city => city.length > 7);
 
 PASO 3:
 En la tercera llamada al método, reemplace la palabra
 method con un método que acepte una matriz que contenga
 múltiples valores y devuelve un solo valor.
 
+const word = cities.reduce((acc, currVal) => {
+  return acc + currVal[0]
+}, "C");
+
 PASO 4:
 En la cuarta llamada al método, reemplace la palabra method
 con un método que devolverá una nueva matriz de números
 devuletos por la función.
 
+const smallerNums = nums.map(num => num - 5);
+
 PASO 5:
 En la quinta llamada al método, reemplace la palabra
-method con un método que devolverá un valor booleano.*/
+method con un método que devolverá un valor booleano.
+
+nums.some(num => num < 0);
+
+*/
 
 const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
 
