@@ -1,14 +1,14 @@
 /*        Documentación del iterador      
 
 Existen muchos métodos incorporados (built-in) de matrices,
-la lista completa de cuales son la puedes encontrae 
+la lista completa de cuales son la puedes encontrar
 en MDN's Array iteration methods page
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods
 
-La documentación de cada método contiene varias seccione:
+La documentación de cada método contiene varias secciones:
 
 1. Una descripción corta de lo que hace el método.
-2. Un bloque con la sintaxis del método.
+2. Un bloque con la sintáxis del método.
 3. Una lista de parámetros que acepta o requiere el método.
 4. El valor de retorno de la función.
 5. Una extensa descripción.
@@ -53,21 +53,21 @@ se ejecute correctamente.
     si cada elemento tiene más de 5 caracteres.
     Si lo hace, el resultado será true.
     
-    */
+*/
+
 const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
 
 // Falta algo en la llamada al método a continuación.
 
-
-console.log(words.some(() => {
+console.log(words.some(word  => {
   return word.length < 6;
 }));
 
 // Utiliza filter para crear un nuevo array
 
-
+const interestingWords = words.filter(words => words.length)
 
 // Asegurate de descomentar el siguiente código y arregla
 // el error antes de ejecutarlo
 
-// console.log(interestingWords.every((word) => { } ));
+console.log(interestingWords.every((word) => { } ));

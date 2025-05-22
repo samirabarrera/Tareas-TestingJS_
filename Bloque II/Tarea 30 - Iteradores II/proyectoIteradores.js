@@ -7,7 +7,7 @@ información y mejorar la calidad de un párrafo.
 INSTRUCCIONES:
 PASO 1
 En el código que se te proporciona, la variable story
-contiene un párrafor que editaremos.
+contiene un párrafo que editaremos.
 Para editar la historia, la convertimos en un array
 en la la línea 3.
 El método .split() separa la cadena story con el caracter
@@ -26,7 +26,7 @@ Para convertir el array storyWords de nuevo en una cadena legible,
 podemos invocar el método .join() en storyWords.
 
 Proporcione al método .join() un argumento de un carácter de espacio vacío 
-( ' ') para separar cada elemento de la matriz con un espacio en la cadena.
+(' ') para separar cada elemento de la matriz con un espacio en la cadena.
  
 Coloque la invocación .join() del método como argumento de una 
 declaración console.log() para registrar la historia final en la consola.
@@ -34,17 +34,17 @@ declaración console.log() para registrar la historia final en la consola.
 PASO 3: Contar las palabras.
 Ahora es momento de empezar a editar la historia manipulando la 
 matriz storyWords. Queremos ver los cambios, así que asegúrate de que 
-el console.log() de la historia unida sea la última línea de código en tu editor.
-Primero, encima de la declaración console.log() que utiliza el método .join(),
-crea una variable llamada count que almacene el número 0.
+el console.log() de la historia unida sea la última línea de código en
+tu editor. Primero, encima de la declaración console.log() que utiliza
+el método .join(), crea una variable llamada count que almacene el número 0.
 
 Justo debajo count, use un método .forEach() para iterar sobre el 
 array storyWords. Como argumento del método forEach(), cree una función 
 vacía que se usará como función de devolución de llamada.
 
-Si bien se recomienda la sintaxis de flecha ES6 para la función de devolución
-de llamada (callback), siéntete libre de usar cualquier sintaxis con la que 
-te sientas cómodo.
+Si bien se recomienda la sintaxis de flecha ES6 para la función de
+devolución de llamada (callback), siéntete libre de usar cualquier 
+sintaxis con la que te sientas cómodo.
 
 
 
@@ -88,9 +88,9 @@ estaba en la primera oración.
 
 
 PASO 7:
-Ahora que eliminamos las palabras innecesarias, corrijamos las palabras mal 
-escritas de la historia. Podemos reasignarlas a storyWords una nueva matriz 
-de palabras con corrección ortográfica usando este método .map().
+Ahora que eliminamos las palabras innecesarias, corrijamos las palabras
+mal escritas de la historia. Podemos reasignarlas a storyWords una nueva
+matriz de palabras con corrección ortográfica usando este método .map().
 
 Reasignar storyWords para igualar la invocación del método .map() en la 
 matriz storyWords.
@@ -108,11 +108,11 @@ Puedes ver una instancia de la palabra corregida en la primera oración de la hi
 
 PASO 8:
 Tu sobrinito va a leer el cuento y hay una palabra "mala" en él. 
-Apliquemos el método .findIndex() para en storyWords encontrar el índice de 
-la palabra mala.
+Apliquemos el método .findIndex() para en storyWords encontrar el índice
+de la palabra mala.
 
-Comience declarando una variable llamada badWordIndex y configurándola para 
-la invocación de .findIndex()en la matriz storyWords.
+Comience declarando una variable llamada badWordIndex y configurándola
+para la invocación de .findIndex()en la matriz storyWords.
 
 La función .findIndex() de devolución de llamada debe verificar cada 
 wordpara ver si es igual a la badWordvariable declarada en la línea 6 y 

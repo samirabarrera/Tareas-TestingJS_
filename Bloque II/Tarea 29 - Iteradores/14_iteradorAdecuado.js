@@ -1,7 +1,7 @@
 /*      ELIJA EL ITERADOR ADECUADO       
 
 Hay muchos métodos de iteración en JavaScript que puedes
-elegir.  Además de aprender la sintaxis correcto para usar
+elegir.  Además de aprender la sintaxis correcta para usar
 los métodos de iteración, también es importante aprender
 a elegir el método correcto para diferentes escenarios.
 Los ejercicios a continuación te darán la oportunidad
