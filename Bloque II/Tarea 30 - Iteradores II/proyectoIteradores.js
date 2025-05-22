@@ -11,7 +11,7 @@ contiene un párrafo que editaremos.
 Para editar la historia, la convertimos en un array
 en la la línea 3.
 El método .split() separa la cadena story con el caracter
-de espacio(' ') y almacena cadapalabra como un
+de espacio(' ') y almacena cada palabra como un
 elemento de la matriz.
 
 Para ver la matriz con la que trabajaremos a lo
@@ -70,17 +70,17 @@ el método .filter(). A lo largo del proyecto, usaremos este enfoque de
 reasignar la variable storyWords en cada revisión de la historia.
 
 Debajo de donde registraste la variable count, reasigna la 
-variable storyWords para que sea igual a la invocación del método .filter() 
-en el array storyWords. Asigna al método .filter() una función de 
-devolución de llamada con un parámetro de word.
+variable storyWords para que sea igual a la invocación del método
+.filter() en el array storyWords. Asigna al método .filter() una 
+función de devolución de llamada con un parámetro de word.
 
 PASO 6:
 Debajo de la declaración storyWords de la variable, observe la variable 
-unnecessaryWord en la línea 4. Queremos filtrar el valor de unnecessaryWord
-de la historia.
+unnecessaryWord en la línea 4. Queremos filtrar el valor de 
+unnecessaryWord de la historia.
 
-Dentro del cuerpo filter() de la función de devolución de llamada del método,
-retorna solo si word NO es igual a .unnecessaryWord.
+Dentro del cuerpo filter() de la función de devolución de llamada del
+método, retorna solo si word NO es igual a .unnecessaryWord.
 
 Revisa la cadena story en la consola para asegurarte de que no incluya la 
 palabra "literalmente". La primera vez que se usó "literalmente" 
@@ -138,7 +138,7 @@ de devolución de llamada para comprobar si todos los elementos de un array
 cumplen una condición especificada. Devuelve true si todos los elementos 
 cumplen la condición y false si hay algún elemento que no la cumple.
 
-Para comenzar, define una variable llamada lengthChecky asígnale la 
+Para comenzar, define una variable llamada lengthCheck y asígnale la 
 invocación del método .every() en storyWords. En la función de devolución 
 de llamada, comprueba si every word tiene menos de 10 caracteres.
 
@@ -151,16 +151,14 @@ Parece que hay al menos una palabra con más de 10 caracteres.
 
 Utilice un método iterador de su elección para acceder a la palabra(s) 
 en el storyWordsarray que tenga más de 10 caracteres. 
-Luego, reemplace manualmente la palabra en la cadena story original por una 
-más corta.
+Luego, reemplace manualmente la palabra en la cadena story original por
+una más corta.
 */
-
-
 
 let story = 'Last weekend, I took literally the most beautifull hike of \
 my life. The trail is called "The High Peak Loop" and \
 it stretches all the way from Lake Placid to Mount Marcy, \
-New York. Itâ€™s really an adventure from beginning to end! \
+New York. It´s really an adventure from beginning to end! \
 It is a 15-mile trek, and it literally took me an entire day. \
 I stopped at Mirror Lake to take some artsy photos. \
 It was a short stop, though,\
@@ -168,15 +166,46 @@ because I had a freaking steep climb ahead. \
 After a quick break at the scenic Adirondack Lodge,\
 I began my ascent up the rocky path. \
 The summit is a breathtaking 5,344 feet high! \
-I was already exhausted by the time I reached the h\
-alfway point. \
+I was already exhausted by the time I reached the \
+halfway point. \
 Two hours later, I arrived at Indian Falls, \
 an extremely beautifull cascade hidden in the forest.\
 Something that surprised me was that near the end,\
- you literally loop back to the starting point! \
- At this stage, youâ€™re very close to finishing.';
+you literally loop back to the starting point! \
+At this stage, you´re very close to finishing.';
+
 
 let storyWords = story.split(' ');
+/*
+let storyWords = story.join(' ');
+let storyWords = storyWords.forEach(() => {})
+*/
+storyWords.forEach(word => {
+  console.log(word);
+});
+
 let unnecessaryWord = 'literally';
+let filteredWords = storyWords.filter(word => word !== unnecessaryWord);
+console.log(filteredWords);
+
 let misspelledWord = 'beautifull';
+let correctdWord = storyWords.map(word =>
+  word === misspelledWord ? 'beautiful' : word
+);
+
 let badWord = 'freaking';
+let badWordIndex = storyWords.findIndex(word => word === 'freaking');
+console.log(badWordIndex);
+console.log(badWord[badWordIndex]);
+
+let lengthCheck = storyWords.every(word => word.length > 9);
+console.log(lengthCheck)
+
+let storyWordsarray = storyWords.map(word => {
+    if(word.length > 10) {
+        return 'shorter';
+    } else {
+        return word;
+    }
+});
+console.log(storyWordsarray);
