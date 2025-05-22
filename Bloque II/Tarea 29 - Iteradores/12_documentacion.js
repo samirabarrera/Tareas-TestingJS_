@@ -51,8 +51,7 @@ se ejecute correctamente.
 
     Completa el código entre paréntesis para comprobar
     si cada elemento tiene más de 5 caracteres.
-    Si lo hace, el resultado será true.
-    
+    Si lo hace, el resultado será true.   
 */
 
 const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
