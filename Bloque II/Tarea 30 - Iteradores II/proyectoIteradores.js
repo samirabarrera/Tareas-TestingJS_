@@ -32,11 +32,11 @@ Coloque la invocación .join() del método como argumento de una
 declaración console.log() para registrar la historia final en la consola.
 
 PASO 3: Contar las palabras.
-Ahora es momento de empezar a editar la historia manipulando la 
-matriz storyWords. Queremos ver los cambios, así que asegúrate de que 
-el console.log() de la historia unida sea la última línea de código en
-tu editor. Primero, encima de la declaración console.log() que utiliza
-el método .join(), crea una variable llamada count que almacene el número 0.
+Ahora es momento de empezar a editar la historia manipulando la matriz
+storyWords. Queremos ver los cambios, así que asegúrate de que el
+console.log() de la historia unida sea la última línea de código en tu
+editor. Primero, encima de la declaración console.log() que utiliza el
+método .join(), crea una variable llamada count que almacene el número 0.
 
 Justo debajo count, use un método .forEach() para iterar sobre el 
 array storyWords. Como argumento del método forEach(), cree una función 
@@ -52,9 +52,9 @@ PASO 4:
 Para cada palabra de la matriz storyWords, queremos que la variable 
 count se incremente en uno.
 
-Añade un parámetro llamado word a la función de devolución de llamada 
-del método .forEach() que se usará para almacenar el elemento actual al 
-iterar sobre el array storyWords. En cada iteración storyWord se incrementa 
+Añade un parámetro llamado word a la función de devolución de llamada del
+método .forEach() que se usará para almacenar el elemento actual al iterar
+sobre el array storyWords. En cada iteración storyWord se incrementa 
 count en uno.
 
 A continuación del método .forEach(), registre (console.log()) count para 
