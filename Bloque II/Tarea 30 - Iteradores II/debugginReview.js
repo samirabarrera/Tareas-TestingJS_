@@ -24,7 +24,7 @@ Resumamos lo aprendido en un proceso de depuración:
    ten cuidado con el código que esta genere
    
 Puede llevar algo de tiempo y práctica, pero  así­ es como
-todos los desarrolladoresresuelven sus problemas, así­
+todos los desarrolladores resuelven sus problemas, así­
 que no te rindas y serás un experto en poco tiempo.*/
 
 
@@ -60,18 +60,16 @@ todas las habilidades para depurarlo.
 Sabemos que puedes lograrlo.*/
 
 //Descomenta el siguiente código para ver el error
-/** 
-function isStringPerfectLength(string, minLength, maxLength {
+
+function isStringPerfectLength (string, minLength, maxLength) {
   const stringLength = string.length;
   
-  if (stringLenth > minLength) {
-    return false;
-  } else if (stringLenth < maxLength) {
+  if (stringLength < minLength) {
     return false;
   } else {
     return true;
   }
-}
+};
 
 // Should return true
 console.log("isStringPerfectLength('Dog', 2, 4) returns: " + isStringPerfectLength('Dog', 2, 4));
@@ -81,4 +79,3 @@ console.log("isStringPerfectLength('Mouse', 2, 4) returns: " + isStringPerfectLe
 
 // Should return false
 console.log("isStringPerfectLength('Cat', 4, 9) returns: " + isStringPerfectLength('Cat', 4, 9));
-*/
