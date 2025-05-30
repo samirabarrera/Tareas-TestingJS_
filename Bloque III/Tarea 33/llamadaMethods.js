@@ -103,4 +103,4 @@ surgeonRomero.takeVacationDays(3)
  * de la instancia surgeonRomero.
  */
 
-console.log(surgeonRomero.takeVacationDays(3))
+console.log(surgeonRomero.takeVacationDays)
