@@ -94,7 +94,7 @@ console.log(surgeonJackson.name)
  * Realiza una llamada al método takeVacationDays() en
  * la instancia surgeonRomero, pasando el argumento 3.
 */
-surgeonRomero.takeVacationDays(5)
+surgeonRomero.takeVacationDays(3)
 
 /**Paso 3:
  * Después de la llamada al método takeVacationDays(), 
@@ -103,4 +103,4 @@ surgeonRomero.takeVacationDays(5)
  * de la instancia surgeonRomero.
  */
 
-console.log(surgeonRomero.takeVacationDays)
+console.log(surgeonRomero.takeVacationDays(3))
