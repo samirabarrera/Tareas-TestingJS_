@@ -1,6 +1,6 @@
 /**            Llamadas a métodos
  * 
- * Utilizaremos nuestor métodos para acceder y manipular
+ * Utilizaremos nuestos métodos para acceder y manipular
  * las instancias de nuestra clase Dog.
  */
 
@@ -47,7 +47,7 @@ console.log(nikko.behavior); // Logs 1 to the console
 console.log(bradford.behavior); // Logs 0 to the console
 
 /**En el ejemplo anterior, creamos dos instancias Dog nuevas,
- * nikko y bradford.  Daso que incrementamos el
+ * nikko y bradford.  Dado que incrementamos el
  * comportamiento de nuestra instancia nikko, pero no
  * bradford, accediendo a nikko.behavior retorna 1 y
  * accediendo a bradford.behavior retorna 0.
@@ -86,10 +86,15 @@ class Surgeon {
 const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
 const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
 
+console.log(surgeonRomero.name)
+console.log(surgeonJackson.name)
+
 /**Paso 2: 
  * Realiza una llamada al método takeVacationDays() en
  * la instancia surgeonRomero, pasando el argumento 3.
 */
+surgeonRomero.takeVacationDays(5)
+
 
 /**Paso 3:
  * Después de la llamada al método takeVacationDays(), 
@@ -97,3 +102,5 @@ const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
  * guardado en la propiedad remainingVacationDays
  * de la instancia surgeonRomero.
  */
+
+console.log(surgeonRomero.takeVacationDays)
