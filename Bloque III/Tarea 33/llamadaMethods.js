@@ -40,6 +40,7 @@ const halley = new Dog('Halley');
  * llamar a nuestro método incrementBehavior() en una de
  * ellas.
  */
+
 let nikko = new Dog('Nikko'); // Create dog named Nikko
 nikko.incrementBehavior(); // Add 1 to nikko instance's behavior
 let bradford = new Dog('Bradford'); // Create dog name Bradford
@@ -94,7 +95,6 @@ console.log(surgeonJackson.name)
  * la instancia surgeonRomero, pasando el argumento 3.
 */
 surgeonRomero.takeVacationDays(5)
-
 
 /**Paso 3:
  * Después de la llamada al método takeVacationDays(), 
