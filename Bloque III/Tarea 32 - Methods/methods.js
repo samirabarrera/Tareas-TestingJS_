@@ -46,7 +46,6 @@ class Surgeon {
     this.department = department;
   }
 }
-*/
 
 const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
 const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
@@ -123,6 +122,9 @@ class Surgeon {
   }
 
   takeVacationDays (daysOff) {
-    this._remainingVacationsDays--
+    this._remainingVacationsDays--;
   }
 }
+
+const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
+const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
