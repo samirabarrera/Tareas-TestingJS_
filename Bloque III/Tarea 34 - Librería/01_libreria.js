@@ -155,7 +155,7 @@ argumento y  usa .push()para agregarlo al final de la
 matriz ratings.
 
     addRating (argumento) {
-
+        this._ratings.push(rating);
     }
 
 Paso 9:
@@ -172,6 +172,14 @@ constructor principal.
 Paso 12:
 Utilice los argumentos restantes para establecer las 
 propiedades author y pagesBook.
+
+class Book {
+    constructor (author, pagesBook) {
+        this._author = author;
+        this._pagesBook = pagesBook;
+    }   
+}
+
 Paso 13:
 Dado que nuestra clase Book hereda las propiedades y los 
 captadores de Media, solo necesitamos crear dos nuevos 
@@ -180,37 +188,18 @@ Agregue dos nuevos getters a la clase Book.
 Cada getter debe devolver el valor guardado en su 
 propiedad correspondiente.
 
-class Media {
-    constructor (title, isCheckedOut, ratings) {
-        this._title = title;
-        this._isCheckedOut = isCheckedOut;
-        this._ratings = ratings;
+class Book extends Media {
+    constructor (title, isCheckedOut, ratings, author, pagesBook) {
+        super(title, isCheckedOut, ratings);
+        this._author = author;
+        this._pagesBook = pagesBook;
     }
-    get title () {
-        return this._title;
-    }
-    get isCheckedOut () {
-        return this._isCheckedOut;
-    }
-    get ratings () {
-        return this._ratings;
-    }
-    
-    set isCheckedOut (setter) {
-        this._isCheckedOut = setter
-    }
-
-    toggleCheckOutStatus () {
-        this._isCheckedOut = !this._isCheckedOut;
-    }
-        getAverageRating () {
-        if (this.ratings.lenght === 0) return 0;
-        let ratingsSum = this.ratings.reduce((currentSum, rating) =>
-        currentSum + rating, 0);
-        return ratingsSum / this._ratings.lenght;
+        get author () {
+            return this._author;
         }
-
-    
+        get pages () {
+            return this._pages
+        }
 }
 
 Paso 14:
@@ -218,12 +207,45 @@ Crear una clase Movie completa usando solo las
 especificaciones de propiedad, captador y método a 
 continuación:
 propiedades : director(cadena), title(cadena), 
-              runTime(número), isCheckedOut(booleano, 
-              inicialmente false) y 
+              runTime(número), isCheckedOut(booleano, inicialmente false) 
               ratings(matriz, inicialmente vacía)
 getters : todas las propiedades tienen un getter
 métodos : .getAverageRating(), .toggleCheckOutStatus(), 
            y.addRating()
+
+class Movie {
+    constructor(director, runTime, ratings, title, isCheckedOut) {
+        this._director = director;
+        this._runTime = runTime;
+        this._ratings = ratings;
+        this._title = title;
+        this._isCheckedOut = isCheckedOut;
+    }
+        get director (){
+            return this._director;
+        }
+        get runTime (){
+            return this._runTime = runTime;
+        }
+        get ratings (){
+            return this._ratings;
+        }
+        get title (){
+            return this._title;
+        }
+        get isCheckedOut (){
+            return this._isCheckedOut;
+        }
+        .getAverageRating() {
+            this._ratings.push(ratings)
+            }
+        .toggleCheckOutStatus() {
+            this._isCheckedOut.push(isCheckedOut)
+            }
+        .addRating () {
+            this._ratings.push(rating);
+    }
+}
 
 Siga estos pasos para crear una Movieclase que extienda Media:
 
@@ -238,6 +260,20 @@ y runTime.
 Cada getter debe devolver el valor guardado en esa 
 propiedad.
 
+class Movie extends Media {
+    constructor (director, title, runTime) {
+        super(title);
+        this._director = director;
+        this._runTime = runTime;
+    }
+        get director() {
+            return this._director;
+        }
+        get runTime() {
+            return this._runTime
+        }
+}
+
 Paso 15:
 Crea una instancia Book con las siguientes propiedades:
 *Author: 'Bill Bryson'
@@ -247,10 +283,17 @@ Crea una instancia Book con las siguientes propiedades:
 Guarda esta instancia en una variable llamada
 historyOfEverything. 
 
+const historyOfEverything = new Book ({
+    Author: 'Bill Bryson'
+    Title: 'A Short History of Nearly Everything'
+    Pages: 544
+    });
 
 Paso 16:
 Realiza una llamada a toggleCheckOutStatus() en la
 instancia historyOfEverything.
+
+historyOfEverything.toggleCheckOutStatus();
 
 Paso 17:
 Registra en consola el valor guardado en la propiedad
@@ -260,33 +303,56 @@ Paso 18:
 Llama 3 veces al método addRating() en la instancia
 historyOfEveryThing con las entradas 4, 5 y 5.
 
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+historyOfEverything.addRating(6);
+
 Paso 19:
 Llama al método getAverageRating() en la instancia
 historyOfEverything y registra el resultado en consola.
+
+historyOfEverything.getAverageRating()
+
+console.log(historyOfEverything.ratings);
 
 Paso 20:
 Crea una instancia Movie con las siguientes propiedades:
 director: 'Jan de Bont',
 title: 'speed', 
 runTime: 116
-
 Guarda esta instancia en una variable llamada speed.
+
+const speed = new Movie ({
+director: 'Jan de Bont',
+title: 'speed', 
+runTime: 116
+});
 
 Paso 21:
 Realiza una llamada a toggleCheckOutStatus() en la
 instancia speed.
 
+speed.toggleCheckOutStatus();
+
 Paso 22:
-Registra en consola el valor guardadp en la propiedad
+Registra en consola el valor guardada en la propiedad
 isCheckedOut de la instancia speed.
+
+console.log(speed.isCheckedOut);
 
 Paso 23:
 Llama 3 veces al método addRating() en la instancia
 speed con las entradas 1, 1, y 5.
 
+speed.addRating(1);
+speed.addRating(1);
+speed.addRating(5);
+
 Paso 24:
 Llama al método getAverageRating() en la instancia 
 speed y registre el resultado en consola
+
+speed.getAverageRating()
 
 Paso 25:
 Felicitaciones, has completado el ejercicio.
