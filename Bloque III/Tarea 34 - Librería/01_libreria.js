@@ -10,7 +10,7 @@
  * tienen las siguientes propiedades y métodos:
  * 
  * Libro:
- * - Propiedades:
+ * Propiedades:
  *   -author (string)
  *   -title (string)
  *   -pages (number)
@@ -29,6 +29,7 @@
  *      - runTime (number)
  *      - isCheckedOut (boolean, inicializado a false)
  *      - ratings (inicialmente un array vacío)
+ * 
  * Getters: todas las propiedades tienen un getter.
  * Métodos:
  *       - getAverageRating()
@@ -50,6 +51,9 @@ Comencemos creando una clase padre para nuestras clases
 Book, CD y Movie.
 Crea una clase vacía llamada Media 
 
+class Media {
+}
+
 Paso 2:
 Dentro de la clase Media cree un método constructor()
 vacío que tome un parámetro.
@@ -57,11 +61,24 @@ Este argumento establecerá la única propiedad que
 está en las tres subclases de Media y no tiene
 un valor predeterminado 
 
+class Media {
+    constructor() {
+    }
+}
+
 Paso 3:
 Dentro del constructor, establezca los valores
 de las propiedades de Media que comparten Book,
 CD y Movie.  Anteponga un guión bajo (_) a todos
 los nombres de propiedad.
+
+class Media {
+    constructor (title, isCheckedOut, ratings) {
+        this._title = title;
+        this._isCheckedOut = isCheckedOut;
+        this._ratings = ratings;
+    }
+}
 
 Paso 4:
 Crea getters para las propiedades title, isCheckedOut
@@ -77,6 +94,31 @@ Debajo de sus captadores, cree un método llamado
 toggleCheckOutStatus que cambien el valor guardado
 en la propiedad _isCheckedOut
 
+class Media {
+    constructor (title, isCheckedOut, ratings) {
+        this._title = title;
+        this._isCheckedOut = isCheckedOut;
+        this._ratings = ratings;
+    }
+    get title () {
+        return this._title;
+    }
+    get isCheckedOut () {
+        return this._isCheckedOut;
+    }
+    get ratings () {
+        return this._ratings;
+    }
+    
+    set isCheckedOut (setter) {
+        this._isCheckedOut = setter
+    }
+
+    toggleCheckOutStatus () {
+        this._isCheckedOut = !this._isCheckedOut;
+    }
+}
+
 Paso 7:
 Debajo de toggleCheckOutStatus(), crea un método llamado 
 getAverageRating. Este debe devolver el valor promedio 
@@ -90,15 +132,31 @@ Pista:
 El código siguiente calcula la suma de los números 
 guardados en la matriz ratings.
 
-let ratingsSum = this.ratings.reduce((currentSum, rating) => currentSum + rating, 0);
+let ratingsSum = this.ratings.reduce((currentSum, rating) =>
+    currentSum + rating, 0);
 
 Puede acceder a la longitud de una matriz utilizando .length
 const lengthOfArray = myArray.length;
+
+toggleCheckOutStatus () {
+        this._isCheckedOut = !this._isCheckedOut;
+    }
+
+getAverageRating () {
+    if (this.ratings.lenght === 0) return 0;
+    let ratingsSum = this.ratings.reduce((currentSum, rating) =>
+    currentSum + rating, 0);
+    return ratingsSum / this._ratings.lenght;
+}
 
 Paso 8:
 Agreguemos un método llamado addRating que acepta un 
 argumento y  usa .push()para agregarlo al final de la  
 matriz ratings.
+
+    addRating (argumento) {
+
+    }
 
 Paso 9:
 Completa la clase Book (ve al paso a paso, paso 10)
@@ -121,6 +179,39 @@ captadores en la clase Book.
 Agregue dos nuevos getters a la clase Book. 
 Cada getter debe devolver el valor guardado en su 
 propiedad correspondiente.
+
+class Media {
+    constructor (title, isCheckedOut, ratings) {
+        this._title = title;
+        this._isCheckedOut = isCheckedOut;
+        this._ratings = ratings;
+    }
+    get title () {
+        return this._title;
+    }
+    get isCheckedOut () {
+        return this._isCheckedOut;
+    }
+    get ratings () {
+        return this._ratings;
+    }
+    
+    set isCheckedOut (setter) {
+        this._isCheckedOut = setter
+    }
+
+    toggleCheckOutStatus () {
+        this._isCheckedOut = !this._isCheckedOut;
+    }
+        getAverageRating () {
+        if (this.ratings.lenght === 0) return 0;
+        let ratingsSum = this.ratings.reduce((currentSum, rating) =>
+        currentSum + rating, 0);
+        return ratingsSum / this._ratings.lenght;
+        }
+
+    
+}
 
 Paso 14:
 Crear una clase Movie completa usando solo las 
