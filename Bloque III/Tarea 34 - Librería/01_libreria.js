@@ -236,13 +236,13 @@ class Movie {
         get isCheckedOut (){
             return this._isCheckedOut;
         }
-        .getAverageRating() {
+        getAverageRating() {
             this._ratings.push(ratings)
             }
-        .toggleCheckOutStatus() {
+        toggleCheckOutStatus() {
             this._isCheckedOut.push(isCheckedOut)
             }
-        .addRating () {
+        addRating () {
             this._ratings.push(rating);
     }
 }
@@ -363,10 +363,24 @@ actual.
 Agregue más propiedades a cada clase 
 ( movieCast, songTitles, etc.)
 
-Crea una  claseCD que extienda Media.
+Crea una  clase CD que extienda Media.
 
-En .addRating(), asegúrese de que la entrada esté entre 
-1 y 5.
+class CD extends Media {
+    constructor (movieCast, songTitles) {
+        super(title, isCheckedOut, ratings);
+        this._movieCast = movieCast;
+        this._songTitles = songTitles;
+    }
+        addRating(rating)
+        {if (rating >= 1 && rating <= 5) {
+        this._ratings.push(rating);
+        } else {
+    console.log('El rating debe estar entre 1 y 5.');
+  }
+    
+}
+
+En .addRating(), asegúrese de que la entrada esté entre 1 y 5.
 Crea un método llamado shuffle para la clase CD. 
 Este método devuelve una matriz aleatoria de todas las 
 canciones de la propiedad songs.
