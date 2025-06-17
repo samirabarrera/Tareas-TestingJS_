@@ -286,8 +286,7 @@ const alSmith = new HighSchool(
 
 console.log(alSmith.sportsTeams);
 
- Paso 19:
- Buen trabajo, si quieres continuar practicando, puedes:
+ Paso 19: Buen trabajo, si quieres continuar practicando, puedes:
 
     Crear una clase de escuela secundaria.
     Agregue más propiedades a cada clase 
