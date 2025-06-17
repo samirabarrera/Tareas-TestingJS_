@@ -170,7 +170,7 @@ static pickSubstituteTeacher(substituteTeachers) {
 return randomTeacher;
 }
  * 
- * Crear una clse de escuela primaria.
+ * Crear una clase de escuela primaria.
  * Paso 8:
  * A continuación, crea una clase llamada PrimarySchool
  * que extienda la clase School.
@@ -180,6 +180,11 @@ return randomTeacher;
  * Paso 9:
  * Dentro de la clase PrimarySchool, crea un constructor()
  * que acepte tres argumentos.
+ * 
+ class PrimarySchool {
+ constructor(name, level, numberOfStudents) {
+  }
+ }
  * 
  * Paso 10:
  * Realiza la llamada super() en la primera lí­nea del
@@ -193,8 +198,12 @@ return randomTeacher;
  * El tercer argumento es pickupPolicy.
  * 
 class PrimarySchool extends School {
-  constructor()
- }
+  constructor(name, numberOfStudents, pickupPolicy) {
+    super(name, 'primary', numberOfStudents);
+
+    this._pickupPolicy = pickupPolicy;
+  }
+}
  * 
  * Paso 12:
  * Dado que nuestra clase PrimarySchool hereda de Schools,
@@ -203,6 +212,9 @@ class PrimarySchool extends School {
  * Añadelo a la clase PrimarySchool. Cada getter debe
  * devolver el valor guardado en esa propiedad.
  * 
+get pickupPolicy() {
+    return this._pickupPolicy;
+  }
  * 
  * Paso 13:
  * En esta tarea, creará una clase HighSchool que extienda
@@ -234,17 +246,27 @@ class PrimarySchool extends School {
  *   name:'Lorraine Hansbury'
      numerOfStudents:514
      pickupPolicy:'Students must be picked up by a parent, guardian, or a family member over the age of 13.' 
- *      
  * Guarde la instancia en una variable llamada lorraineHansbury.
  * 
- * Paso 15:
- * Llamar  a .quickFacts() con la instancia lorraineHansbury.
+ const lorraineHansbury = new PrimarySchool(
+  'Lorraine Hansbury',
+  514,
+  'Students must be picked up by a parent, guardian, or a family member over the age of 13.'
+);
+ * 
+ * Paso 15: Llamar  a .quickFacts() con la instancia lorraineHansbury.
+ * 
+ lorraineHansbury.quickFacts()
  * 
  * Paso 16:
  * La directora Lorraine Hansbury necesita un sustituto para el dí­a.
  * Invoca a .pickSubstituteTeacher() en School, y pasa el siguiente
  * argumento:
  * ['Jamal Crawford', 'Lou Williams', 'J. R. Smith', 'James Harden', 'Jason Terry', 'Manu Ginobli'];
+ * 
+ * const teachers = ['Jamal Crawford', 'Lou Williams', 'J. R. Smith', 'James Harden', 'Jason Terry', 'Manu Ginobli'];
+const substitute = School.pickSubstituteTeacher(teachers);
+console.log(substitute);
  *
  *Paso 17:
    *Crea una instancia de HighSchool con las siguientes Propiedades:
@@ -254,8 +276,15 @@ class PrimarySchool extends School {
 
     Guarda la instancia en una variable llamada alSmith.
 
-* Paso 18:
- Obten el valor guardado en la propiedad sportsTeams en alSmith.
+const alSmith = new HighSchool(
+  'Al E. Smith',
+  415,
+  ['Baseball', 'Basketball', 'Volleyball', 'Track and Field']
+);
+
+* Paso 18: Obten el valor guardado en la propiedad sportsTeams en alSmith.
+
+console.log(alSmith.sportsTeams);
 
  Paso 19:
  Buen trabajo, si quieres continuar practicando, puedes:
