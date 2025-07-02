@@ -14,9 +14,9 @@
 //   toggleHiddenElement(pElement);               //escuchar a los eventos 'click'
 // });
 /* secret-messages.js */
-import { toggleHiddenElement, changeToFunkyColor } from '../modules/dom-functions.js';// ../ indica que la carpeta modules/ se
-                              // encuentra en la misma carpeta que la
-                              // carpeta principal, secret-messages/
+import { toggleHiddenElement, changeToFunkyColor } from './dom-functions.js';// ../ indica que la carpeta modules/ se
+                                                                            // encuentra en la misma carpeta que la
+                                                                            // carpeta principal, secret-messages/
 const buttonElement = document.getElementById('secret-button');
 const pElement = document.getElementById('secret-p');
 
